@@ -173,16 +173,17 @@ address {
     display: flex;
 }
 
-.main-header {
+.main-header { padding: 24px 0;
     border-bottom: 1px solid #e7e9fc;
 }
 
 .header-navigation {
+   
     align-items: center;
 }
 
 .header-content {
-    padding: 24px 0;
+
     justify-content: space-between;
 }
 
@@ -232,6 +233,8 @@ address {
     border-radius: 2px;
     padding-bottom: 20px;
 }
+
+
 
 /* ========== Contacts ==========  */
 
@@ -446,3 +449,12 @@ address {
     border: 1px solid var(--color-cloud-light);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
