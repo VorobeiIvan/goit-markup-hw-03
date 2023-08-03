@@ -165,6 +165,7 @@ address {
 .address-list {
     display: flex;
 }
+
 /* align-items: center; */
 
 .nav-list,
