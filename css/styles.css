@@ -143,18 +143,20 @@ address {
     margin: -1px;
     border: 0;
     padding: 0;
-    
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 .container {
     width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 .link {
     text-decoration-line: none;
@@ -218,6 +220,7 @@ address {
 
 /* ========== Navigation ==========  */
 .nav-link {
+    padding: 24px 0;
     color: var(--color-navy-blue-dark);
     font-weight: var(--body-medium-font-weight);
 }
@@ -394,9 +397,7 @@ address {
 
 .portfolio-text-conteiner {
     padding: 32px 16px;
-    border-top: none;
-
-    border: 1px solid var(--color-cornflower-accent);
+   
 }
 
 /* ========== Filtr ========== */
@@ -433,10 +434,10 @@ address {
 }
 
 .card-list-item {
-
     width: calc((100% - 48px) / 3);
     background: var(--color-white-background);
-    
+    border-top: none;
+    border: 1px solid var(--color-cornflower-accent);
 }
 
 .card-list-item:hover,
