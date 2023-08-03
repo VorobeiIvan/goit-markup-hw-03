@@ -165,8 +165,11 @@ address {
 .address-list {
     display: flex;
 }
+.main-header {
+border-bottom: 1px solid #e7e9fc;}
 
-/* align-items: center; */
+.header-navigation{ align-items: center; }
+
 
 .nav-list,
 .address-list {
@@ -352,6 +355,7 @@ address {
 /* footer */
 .footer {
     background: var(--color-navy-blue-dark);
+    padding: 100px 0;
 }
 
 .footer-text {
@@ -359,9 +363,7 @@ address {
     color: var(--color-cloud-light);
 }
 
-.footer-text-content {
-    padding: 100px 0;
-}
+
 
 .footer-link {
     display: inline-block;
@@ -375,7 +377,7 @@ address {
 .filter-list {
     display: flex;
     justify-content: center;
-    row-gap: 24px;
+    gap: 24px;
     margin-bottom: 72px;
 
 }
