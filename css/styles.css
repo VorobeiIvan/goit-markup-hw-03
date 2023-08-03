@@ -1,7 +1,7 @@
-/* Style Guide */
+/* ========== Style Guide ========== */
 
 :root {
-    /* #region colors*/
+    /* #region ========== colors ==========*/
     --color-iris-primary-brand: #4D5AE5;
     --color-ocean-pressed-state: #404BBF;
     --color-navy-blue-dark: #2E2F42;
@@ -16,9 +16,9 @@
     --color-dairy-mdal-background: #FCFCFC;
     /* #endregion colors */
 
-    /* #region typography */
+    /* #region  ========== typography ========== */
 
-    /* #region Main text/p */
+    /* #region ==========Main text/p  ==========*/
     --font-family: "Roboto", sans-serif;
     --font-weight: 400;
     --font-size: 16px;
@@ -26,38 +26,38 @@
     --line-height: 1.5;
     /* #endregion Main text/p */
 
-    /* #region Title/Header 1 */
+    /* #region ========== title-hero/ h1 ========== */
     --h1-font-weight: 700;
     --h1-font-size: 56px;
     --h1-line-height: 1.07;
     --h1-letter-spacing: 0.02em;
-    /* #endregion Title/Header 1 */
+    /* #endregion Title/h1 */
 
-    /* #region Header 2 */
+    /* #region ========== title/ h2 ==========*/
     --h2-font-weight: 700;
     --h2-font-size: 36px;
     --h2-line-height: 1.11;
     --h2-letter-spacing: 0.02em;
     /* #endregion Header 2 */
 
-    /* #region Header 3 */
+    /* #region ========== subtitle/h3 ========== */
     --h3-font-weight: 500;
     --h3-font-size: 20px;
     --h3-line-height: 1.2;
     --h3-letter-spacing: 0.02em;
     /* #endregion Header 3 */
 
-    /* #region Small */
+    /* #region ========== Small ========== */
     --small-font-size: 12px;
     --small-line-height: calc(14px / 12px);
     --small-letter-spacing: 0.04em;
     /* #endregion Small */
 
-    /* #region Body Medium */
+    /* #region ========== Body Medium ========== */
     --body-medium-font-weight: 500;
     /* #endregion Body Medium */
 
-    /* #region Button Text */
+    /* #region ========== Button Text ========== */
     --button-font-family: "Roboto", sans-serif;
     --button-font-size: 16px;
     --button-font-weight: 500;
@@ -65,14 +65,14 @@
     --button-letter-spacing: 0.04em;
     /* #endregion Button Text */
 
-    /* #region Link */
+    /* #region ========== Link ==========*/
     --link-font-size: 12px;
     --link-line-height: 1.17;
     --link-letter-spacing: 0.04em;
     --link-decoration: Underline;
     /* #endregion Link */
 
-    /* #region Logo */
+    /* #region ========== Logo  ========== */
     --logo-font-family: "Raleway", sans-serif;
     --logo-font-weight: 800;
     --logo-font-size: 18px;
@@ -84,6 +84,7 @@
 
 }
 
+/* ========== Tag selector ========== */
 
 body {
     font-family: var(--font-family);
@@ -106,6 +107,7 @@ p {
     margin-block: 0;
 }
 
+
 ul {
     margin-block: 0;
     padding-left: 0;
@@ -114,6 +116,7 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 button {
@@ -130,6 +133,9 @@ address {
     font-style: normal;
 }
 
+
+/* ========== General helper classes ========== */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -144,7 +150,6 @@ address {
     overflow: hidden;
 }
 
-
 .container {
     width: 1158px;
     margin: 0 auto;
@@ -157,7 +162,7 @@ address {
 }
 
 
-/* Header */
+/* ========== Header ==========  */
 .main-header,
 .header-content,
 .header-navigation,
@@ -165,19 +170,27 @@ address {
 .address-list {
     display: flex;
 }
+
 .main-header {
-border-bottom: 1px solid #e7e9fc;}
+    border-bottom: 1px solid #e7e9fc;
+}
 
-.header-navigation{ align-items: center; }
+.header-navigation {
+    align-items: center;
+}
 
+.header-content {
+    padding: 24px 0;
+    justify-content: space-between;
+}
 
 .nav-list,
 .address-list {
     gap: 40px;
-
 }
 
-/* Logo */
+
+/*  ========== Logo ==========  */
 .logo {
     font-family: var(--logo-font-family);
     font-size: var(--logo-font-size);
@@ -203,6 +216,7 @@ border-bottom: 1px solid #e7e9fc;}
     color: var(--color-cloud-light);
 }
 
+/* ========== Navigation ==========  */
 .nav-link {
     padding: 24px 0;
     color: var(--color-navy-blue-dark);
@@ -212,7 +226,12 @@ border-bottom: 1px solid #e7e9fc;}
 .nav-link:hover,
 .nav-link:focus {
     color: var(--color-ocean-pressed-state);
+    border-bottom: 4px solid var(--color-ocean-pressed-state);
+    border-radius: 2px;
+    padding-bottom: 20px;
 }
+
+/* ========== Contacts ==========  */
 
 .contact-link {
     color: var(--color-slate-body-text);
@@ -223,7 +242,7 @@ border-bottom: 1px solid #e7e9fc;}
     color: var(--color-ocean-pressed-state);
 }
 
-/* Hero */
+/*  ========== Hero ==========  */
 .section-hero {
     height: 600px;
     padding: 188px 0;
@@ -260,24 +279,19 @@ border-bottom: 1px solid #e7e9fc;}
     padding: 16px 32px;
 
     color: var(--color-white-background);
-    background: var(--color-iris-primary-brand);
+    background-color: var(--color-iris-primary-brand);
 
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.button:hover,
-.button:focus {
-    background: var(--color-ocean-pressed-state);
+.button-hero:hover,
+.button-hero:focus {
+    background-color: var(--color-ocean-pressed-state);
 }
 
-/* Advantages */
-
-.section-advantages {
-    padding: 120px 0;
-}
-
+/*  ========== Advantages ==========  */
 
 .advantive-list,
 .skill-list,
@@ -285,7 +299,10 @@ border-bottom: 1px solid #e7e9fc;}
     display: flex;
     justify-content: space-between;
     gap: 24px;
+}
 
+.section-advantages {
+    padding: 120px 0;
 }
 
 .advantive-list-item {
@@ -307,7 +324,7 @@ border-bottom: 1px solid #e7e9fc;}
     letter-spacing: var(--letter-spacing);
 }
 
-/* What are we doing */
+/* ========== What are we doing ==========  */
 
 .section-skill {
     padding-bottom: 120px;
@@ -332,7 +349,7 @@ border-bottom: 1px solid #e7e9fc;}
     text-transform: capitalize;
 }
 
-/* our-team */
+/*  ========== Our-team ==========  */
 .section-our-team {
     padding: 120px 0;
     background: var(--color-cloud-light);
@@ -352,7 +369,7 @@ border-bottom: 1px solid #e7e9fc;}
     text-align: center;
 }
 
-/* footer */
+/*  ========== Footer ========== */
 .footer {
     background: var(--color-navy-blue-dark);
     padding: 100px 0;
@@ -363,28 +380,30 @@ border-bottom: 1px solid #e7e9fc;}
     color: var(--color-cloud-light);
 }
 
-
-
 .footer-link {
     display: inline-block;
     margin-bottom: 16px;
 }
 
 
-/* Portfolio */
+/*  ==========  ========== Portfolio ==========  ==========  */
 
+.portfolio-card-section {
+    padding: 96px 0 120px 0;
+    justify-content: space-between;
+}
 
+.portfolio-text-conteiner {
+    padding: 32px 16px;
+    border-top: none;
+}
+
+/* ========== Filtr ========== */
 .filter-list {
     display: flex;
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
-
-}
-
-.portfolio-card-section {
-    padding: 96px 0 120px 0;
-    justify-content: space-between;
 }
 
 .filter-button {
@@ -403,25 +422,24 @@ border-bottom: 1px solid #e7e9fc;}
     background-color: var(--color-ocean-pressed-state);
 }
 
+/* ========== Cards ========== */
 .card-list {
     display: flex;
 
     flex-wrap: wrap;
     gap: 48px 24px;
     justify-content: space-between;
-
-
 }
 
 .card-list-item {
 
     width: calc((100% - 48px) / 3);
     background: var(--color-white-background);
+    border: 1px solid var(--color-cornflower-accent);
 }
 
-.portfolio-text-conteiner {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-
+.card-list-item:hover,
+.card-list-item:focus {
+    border: 1px solid var(--cloud, #F4F4FD);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
